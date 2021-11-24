@@ -1,0 +1,282 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+body{
+    background-color: #7fcde7;
+    text-align: center;
+}
+h1{
+    color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+    
+}
+h2{
+    color: #FFFFFF;
+}
+h3{
+    color: #FFFFFF;
+}
+p{
+    color: #FFFFFF;
+}
+table{
+    background-color: #CAE9FF ;
+}
+a{
+    color: #FFFFFF;
+}
+
+a:hover{
+    color: #bee9e8;
+}
+
+a:active{
+    color: aquamarine;
+} 
+
+nav{
+    background-color: hsla(212, 80%, 36%, 0.514);
+}
+
+#divImagen
+{
+   width:100%; 
+   height:auto;
+   
+}
+
+.fuenteGenerica{
+    font-style: normal;
+    font-weight: 100;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul{
+    font-size: 0;
+}
+li {
+    display: inline-block;
+    width: 20%;
+    position: relative;
+    font-size: 15px;
+}
+li a {
+    text-decoration: none;
+}
+
+li a:hover {
+    color: #bee9e8;
+}
+
+ul ul {
+    position: absolute;
+    display: none;
+}
+
+ul ul li {
+    display: block;
+}
+
+ul li:hover ul {
+    display: block;
+}
+ul ul a{
+    color: #000;
+}
+/*-------Home--------*/
+
+/*
+.listaTablas{
+    list-style-type: disc;
+    list-style-position: inside;
+} */
+
+.contenedor{
+    width: 100%;
+    height: auto;
+    background-color:#bee9e8;
+    border: 2px #000;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    text-align: center;
+    font-size: 15px;
+    line-height: auto;
+}
+
+.ulDentroFlex{
+
+    font-style: normal;
+    font-weight: 100;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 30px;
+}
+
+.ulDentroFlex li{
+    display: block;
+    margin: 3px;
+}
+
+.menuGrid{
+    display: grid;
+}
+
+
+.galeriaDeFotos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 150px;
+    padding: 20px;
+    grid-gap: 10px;
+}
+
+.imagenGaleria{
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+.imagenGaleria:hover{
+    transform: scale(1.2);
+    transition: 1s;
+}
+
+.itemGaleria{
+    position: relative;
+    overflow: hidden;
+
+}
+
+
+.tituloImagen{
+    position: absolute;
+    bottom: 0;
+    color: white;
+    background-color: tomato;
+    width: 100%;
+    margin: 0;
+    
+}
+
+.itemGaleria:nth-child(4){
+    grid-column-start: span 2;
+}
+
+.itemGaleria:nth-child(5){
+    grid-row-start: span 2;
+}
+.itemGaleria:nth-child(9){
+    grid-row-start: span 2;
+}
+
+
+
+/*@media only screen and (max-width:480px){
+    .body{
+     background-color: rgb(184, 28, 28);
+    } 
+    .menuGrid{
+        grid-template-columns: 1fr 1fr 1rf;
+        grid-template-rows: 1fr 1fr;
+        align-items: center;
+        justify-content: space-evenly;
+
+    }
+    .galeriaDeFotos{
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+
+    .itemGaleria:nth-child(6){
+        grid-row-start: span 2;
+    }
+} */
+
+@media only screen and (min-width:768px){
+    .body{
+     background-color: #FFFFFF;
+    } 
+    .menuGrid{
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .galeriaDeFotos{
+        grid-template-columns: repeat(4, 1fr);
+
+    }
+    .itemGaleria:nth-child(6){
+        grid-row-start: span 2;
+    }
+    .itemGaleria:nth-child(3){
+        grid-column-start: span 2;
+    }
+    .itemGaleria:nth-child(9){
+        grid-row-start: span 1;
+    }
+    .navbar-collapse{
+        flex-grow: unset;
+    }
+}
+
+@media only screen and (min-width:1024px){
+    .body{
+     background-color: hsl(192, 85%, 65%);
+    } 
+    .menuGrid{
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .galeriaDeFotos{
+        grid-template-columns: repeat(5, 1fr);
+        width: 90%;
+        margin: auto;
+
+    }
+    .itemGaleria:nth-child(4){
+        grid-column-start: span 2;
+    }
+    
+    .itemGaleria:nth-child(5){
+        grid-row-start: span 2;
+    }
+    .itemGaleria:nth-child(9){
+        grid-row-start: span 2;
+    }
+    .itemGaleria:nth-child(6){
+        grid-row-start: span 3;
+    }
+    .itemGaleria:nth-child(3){
+        grid-column-start: span 3;
+    }
+    .itemGaleria:nth-child(9){
+        grid-row-start: span 2;
+    }
+    .itemGaleria:nth-child(10){
+        grid-row-start: span 2;
+    }
+}
+
+
+
+/*-------Limpieza--------*/
+
+.margenVideo{
+    margin-left: auto;
+}
+
+/*-------Perfumeria--------*/
+
+
+/*-------Ubicacion--------*/
+
+
+/*-------Contacto--------*/
+

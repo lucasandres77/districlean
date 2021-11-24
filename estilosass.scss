@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+.perfumeria{
+    background-color: rgb(114, 241, 250);
+    color: black;
+    text-align: center;
+
+
+
+    .perfumeria__titulo{
+        color: blueviolet;
+
+    }
+
+    .perfumeria__parrafo{
+        color: brown;
+    }
+
+}
+
+.limpieza{
+    
+    background-color:hsla(212, 80%, 36%, 0.514);
+    color: indianred;
+    text-align: right;
+
+    .limpieza__titulo{
+        text-align: center;
+    }
+    
+    .limpieza__parrafo{
+        height: 100px;
+    }
+
+    .limpieza__parrafo--color{
+        color: lightblue;
+    }
+}
+
+.contenedorFormulario{
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.footerPredeterminado{
+    height: 50px;
+    background-color: aliceblue
+}
+
+.textoEnFooter{
+    @extend .footerPredeterminado;
+        color: rgb(0, 0, 0);
+        text-align: center;
+        padding-top: 5px;
+        text-transform: uppercase;
+
+}
+
+
+.bordeMapa{
+    border-width: 4px;
+    border-color: rgb(218, 46, 175);
+    border-style: double;
+}
