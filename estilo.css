@@ -175,26 +175,6 @@ object-fit: cover;
 
 
 
-/*@media only screen and (max-width:480px){
-    .body{
-     background-color: rgb(184, 28, 28);
-    } 
-    .menuGrid{
-        grid-template-columns: 1fr 1fr 1rf;
-        grid-template-rows: 1fr 1fr;
-        align-items: center;
-        justify-content: space-evenly;
-
-    }
-    .galeriaDeFotos{
-        grid-template-columns: repeat(3, 1fr);
-
-    }
-
-    .itemGaleria:nth-child(6){
-        grid-row-start: span 2;
-    }
-} */
 
 @media only screen and (min-width:768px){
     .body{
@@ -221,6 +201,10 @@ object-fit: cover;
     }
     .navbar-collapse{
         flex-grow: unset;
+    }
+
+    .demo{
+        width: 100%;
     }
 }
 
